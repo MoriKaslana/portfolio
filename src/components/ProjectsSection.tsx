@@ -8,7 +8,7 @@ title: 'MHW Wiki',
       description: 'A mystical website thay help thy new player to acknowledge MHW.',
       tech: ['XHTML, CSS, JavaScript, Firebase'],
       status: 'Legendary',
-      image: 'public/assets/mhw.png',
+      image: '/mhw.png',
       link: 'https://github.com/MoriKaslana/MHW-Wiki'
     },
     {
@@ -16,7 +16,7 @@ title: 'MHW Wiki',
       description: 'An otherworldly assists for those whom need IT and Medical Solutions.',
       tech: ['HTML, HTML5, CSS, JavaScript'],
       status: 'Epic',
-      image: 'public/assets/alzain.png',
+      image: '/alzain.png',
       link: 'https://github.com/AlZain-IT/alzain'
     },
     {
@@ -24,7 +24,7 @@ title: 'MHW Wiki',
       description: 'An e-commerce platform for whom those in need of boost in game currency.',
       tech: ['HTML, CSS, JavaScript, Node.js'],
       status: 'Epic',
-      image: 'public/assets/velkstore.png',
+      image: '/velkstore.png',
       link: 'https://github.com/MoriKaslana/VelkStore'
     }
   ];
