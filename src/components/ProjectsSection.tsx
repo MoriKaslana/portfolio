@@ -5,7 +5,7 @@ const ProjectsSection = () => {
   const projects = [
     {
 title: 'MHW Wiki',
-      description: 'A mystical website thay help thy new player to acknowledge MHW.',
+      description: 'A comprehensive wiki and companion web app for Monster Hunter World, crafted to guide new hunters through the treacherous wilds. Features monster databases, weapon breakdowns, and build references — all structured for clarity and fast lookup using Firebase as a live backend.',
       tech: ['XHTML, CSS, JavaScript, Firebase'],
       status: 'Legendary',
       image: '/mhw.png',
@@ -13,15 +13,23 @@ title: 'MHW Wiki',
     },
     {
       title: 'AlZain IT and Medical Solutions',
-      description: 'An otherworldly assists for those whom need IT and Medical Solutions.',
+      description: 'A professional company profile and service platform for AlZain IT and Medical Solutions, built to showcase their dual-domain expertise. Designed with a clean, trustworthy layout that communicates technical and medical offerings clearly across all devices.',
       tech: ['HTML, HTML5, CSS, JavaScript'],
       status: 'Epic',
       image: '/alzain.png',
       link: 'https://github.com/AlZain-IT/alzain'
     },
     {
+      title: 'The Sovereign Guild',
+      description: 'A gamified task management web app that transforms daily productivity into an RPG experience — featuring levels, custom achievements, multiplayer duels, real-time chat, invitation systems, quest tracking, and guild milestones backed by a relational PostgreSQL/MySQL schema.',
+      tech: ['Vue.js', 'PostgreSQL', 'MySQL', 'Node.js'],
+      status: 'Mythical',
+      image: '/sovereign.png',
+      link: 'https://github.com/MoriKaslana/guild-tasks'
+    },
+    {
       title: 'Velkstore',
-      description: 'An e-commerce platform for whom those in need of boost in game currency.',
+      description: 'A fully functional e-commerce storefront for in-game currency and boosting services, built with a smooth purchasing flow, product listings, and order management. Engineered with Node.js on the back end to handle transactions and dynamic inventory reliably.',
       tech: ['HTML, CSS, JavaScript, Node.js'],
       status: 'Epic',
       image: '/velkstore.png',
@@ -33,6 +41,7 @@ title: 'MHW Wiki',
     switch (status) {
       case 'Legendary': return 'text-yellow-400';
       case 'Epic': return 'text-purple-400';
+      case 'Mythical': return 'text-red-500';
       default: return 'text-primary';
     }
   };

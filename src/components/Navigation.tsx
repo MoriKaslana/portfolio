@@ -16,8 +16,12 @@ const Navigation = () => {
   const navItems = [
     { name: 'Home', href: '#' },
     { name: 'Attributes', href: '#skills' },
+    { name: 'Chronicles', href: '#education' },
+    { name: 'Campaigns', href: '#experience' },
+    { name: 'Scrolls', href: '#certifications' },
+    { name: 'Tongues', href: '#languages' },
     { name: 'Artifacts', href: '#projects' },
-    { name: 'Summon', href: '#contact' }
+    { name: 'Summon', href: '#contact' },
   ];
 
   return (

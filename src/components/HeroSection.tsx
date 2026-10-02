@@ -30,6 +30,12 @@ const HeroSection = () => {
           Welcome, traveler, to my domain of creation.
         </p>
 
+        <p className="font-crimson text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
+          A fresh graduate in Informatics Engineering from Jakarta State Polytechnic with a strong passion for web design.
+          Versed in Java, Python, HTML, XHTML, React.js, Vue.js, and PostgreSQL — fluent in English, confident in public speaking,
+          and driven to learn, grow, and take on new challenges in both technical and collaborative environments.
+        </p>
+
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <a 
             href="#projects" 
