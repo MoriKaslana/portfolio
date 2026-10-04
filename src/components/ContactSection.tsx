@@ -68,7 +68,7 @@ const ContactSection = () => {
             <h3 className="font-cinzel text-2xl font-bold mb-6 rune-decoration">
               Cast Your Message
             </h3>
-            
+
             <div className="space-y-6">
               <div>
                 <label className="font-cinzel text-sm font-medium mb-2 block">
@@ -139,15 +139,15 @@ const ContactSection = () => {
               <div className="space-y-3 font-crimson">
                 <p className="flex items-center">
                   <span className="text-primary mr-2">📧</span>
-                  ishomnabil@gmail.com
+                  vollerei21@gmail.com
                 </p>
                 <p className="flex items-center">
                   <span className="text-primary mr-2">🌐</span>
                   https://github.com/MoriKaslana
                 </p>
-                <p className="flex items-center"> 
+                <p className="flex items-center">
                   <span className="text-primary mr-2">💼</span>
-                  https://www.linkedin.com/in/ishom-nabil-umran-alihaq-98383a218/  
+                  https://www.linkedin.com/in/ishom-nabil-umran-alihaq-98383a218/
                 </p>
               </div>
             </div>
@@ -171,6 +171,7 @@ const ContactSection = () => {
                 <p>• Website Designer</p>
                 <p>• UI/UX Design Consultations</p>
                 <p>• Quality Assurance</p>
+                <p>• Frontend Web Development</p>
               </div>
             </div>
           </div>

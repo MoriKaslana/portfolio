@@ -39,15 +39,22 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <a 
             href="#projects" 
-            className="ancient-border bg-card px-8 py-4 rounded-md font-cinzel font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 transform hover:scale-105"
+            className="ancient-border bg-card px-8 py-4 rounded-md font-cinzel font-medium text-primary hover:bg-primary hover:text-black transition-all duration-300 transform hover:scale-105"
           >
             View Legendary Works
           </a>
           <a 
             href="#contact" 
-            className="ancient-border bg-transparent px-8 py-4 rounded-md font-cinzel font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 transform hover:scale-105"
+            className="ancient-border bg-card px-8 py-4 rounded-md font-cinzel font-medium text-primary hover:bg-primary hover:text-black transition-all duration-300 transform hover:scale-105"
           >
             Initiate Contact
+          </a>
+          <a
+            href="/CV.pdf"
+            download="Ishom_Nabil_CV.pdf"
+            className="ancient-border bg-card px-8 py-4 rounded-md font-cinzel font-medium text-primary hover:bg-primary hover:text-black transition-all duration-300 transform hover:scale-105"
+          >
+            Download CV
           </a>
         </div>
       </div>
