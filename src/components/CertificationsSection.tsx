@@ -6,31 +6,19 @@ const certifications = [
     title: 'Google Cloud Certified – Associate Cloud Engineer',
     issuer: 'Google',
     date: 'May 2025',
-    credential: '',
-  },
-  {
-    title: 'CEP – CCIT FTUI Program Certificate',
-    issuer: 'NIIT',
-    date: 'Mar 2025',
-    credential: '',
-  },
-  {
-    title: 'Bangkit Academy 2024 – Cloud Computing Cohort',
-    issuer: 'Google',
-    date: 'Jan 2025',
-    credential: '',
-  },
-  {
-    title: 'Associate Data Scientist',
-    issuer: 'BNSP',
-    date: 'Aug 2025',
-    credential: '',
+    credential: '/cert/Certificate.pdf',
   },
   {
     title: 'Junior Web Developer',
     issuer: 'BNSP',
     date: 'June 2026',
-    credential: '',
+    credential: '/cert/e-serkom NG_page-0001.jpg',
+  },
+  {
+    title: 'Bangkit Academy 2024 – Cloud Computing Cohort',
+    issuer: 'Google',
+    date: 'Jan 2025',
+    credential: '/cert/_Bangkit 2024 Batch 2_ Certificate _ C128B4KY2016_pages-to-jpg-0001.jpg',
   },
 ];
 

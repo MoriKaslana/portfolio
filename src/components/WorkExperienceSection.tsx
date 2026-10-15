@@ -8,6 +8,13 @@ const experiences = [
     period: 'Aug 2025 – Nov 2025',
     description: '',
   },
+  {
+    role: 'Freelance Data Trainer – React Engineer',
+    company: 'SME Careers',
+    period: 'Sept 2026 – Now',
+    description: '',
+  },
+
 ];
 
 const WorkExperienceSection = () => {
