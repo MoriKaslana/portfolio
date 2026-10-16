@@ -1,12 +1,59 @@
-
 import React from 'react';
 
 const certifications = [
   {
-    title: 'Google Cloud Certified – Associate Cloud Engineer',
-    issuer: 'Google',
-    date: 'May 2025',
-    credential: '/cert/Certificate.pdf',
+    title: 'AI Basic',
+    issuer: 'Google-Dicoding',
+    date: 'Nov 2024',
+    credential: '/cert/AI.jpg',
+  },
+  {
+    title: 'Cloud Engineer',
+    issuer: 'Google-Dicoding',
+    date: 'Nov 2024',
+    credential: '/cert/Cloud Engineer.jpg',
+  },
+  {
+    title: 'Basic Web Development',
+    issuer: 'Google-Dicoding',
+    date: 'Sept 2024',
+    credential: '/cert/Dasar Web Code.jpg',
+  },
+  {
+    title: 'Git',
+    issuer: 'Google-Dicoding',
+    date: 'Sept 2024',
+    credential: '/cert/Git.jpg',
+  },
+  {
+    title: 'Basic JavaScript',
+    issuer: 'Google-Dicoding',
+    date: 'Sept 2024',
+    credential: '/cert/JS.jpg',
+  },
+  {
+    title: 'Machine Learning Implementation using Google Cloud',
+    issuer: 'Google-Dicoding',
+    date: 'Dec 2024',
+    credential: '/cert/ML Google Cloud.jpg',
+  },
+  {
+    title: 'Software Development',
+    issuer: 'Google-Dicoding',
+    date: 'Sep 2024',
+    credential: '/cert/Software Dev.jpg',
+  },
+  {
+    title: 'Certified Cybersecurity Educator Professional (CCEP)',
+    issuer: 'RED TEAM LEADERS',
+    date: 'Oct 2026',
+    credential: '/cert/Red Team.jpg',
+  },
+  {
+    title: 'Internship Mobile Developer',
+    issuer: 'Kemendiknas',
+    date: 'Feb 2026',
+    credential: '/cert/Sertif Setjen_pages-to-jpg-0001.jpg',
   },
   {
     title: 'Junior Web Developer',
@@ -21,6 +68,11 @@ const certifications = [
     credential: '/cert/_Bangkit 2024 Batch 2_ Certificate _ C128B4KY2016_pages-to-jpg-0001.jpg',
   },
 ];
+
+// Sort A–Z by title (case-insensitive, without mutating the original array)
+const sortedCertifications = [...certifications].sort((a, b) =>
+  a.title.trim().localeCompare(b.title.trim(), undefined, { sensitivity: 'base' })
+);
 
 const CertificationsSection = () => {
   return (
@@ -37,14 +89,29 @@ const CertificationsSection = () => {
           </p>
         </div>
 
-        {certifications.length > 0 ? (
+        {sortedCertifications.length > 0 ? (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {certifications.map((cert, index) => (
+            {sortedCertifications.map((cert) => (
               <div
-                key={index}
+                key={cert.title}
                 className="ancient-border bg-card p-6 rounded-lg transform hover:scale-105 transition-all duration-300 flex flex-col gap-3"
               >
-                <div className="text-2xl text-primary text-center">📜</div>
+                {/* Certificate image, always visible */}
+                {cert.credential && (
+                  <a
+                    href={cert.credential}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block overflow-hidden rounded-md border border-primary/20"
+                  >
+                    <img
+                      src={encodeURI(cert.credential)}
+                      alt={`${cert.title} certificate`}
+                      loading="lazy"
+                      className="w-full aspect-[4/3] object-cover"
+                    />
+                  </a>
+                )}
                 <h3 className="font-cinzel text-base font-semibold text-foreground text-center leading-snug">
                   {cert.title}
                 </h3>
