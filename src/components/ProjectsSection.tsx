@@ -6,7 +6,7 @@ const ProjectsSection = () => {
     {
 title: 'MHW Wiki',
       description: 'A comprehensive wiki and companion web app for Monster Hunter World, crafted to guide new hunters through the treacherous wilds. Features monster databases, weapon breakdowns, and build references — all structured for clarity and fast lookup using Firebase as a live backend.',
-      tech: ['XHTML, CSS, JavaScript, Firebase'],
+      tech: ['XHTML', 'CSS', 'JavaScript', 'Firebase'],
       status: 'Legendary',
       image: '/mhw.png',
       link: 'https://github.com/MoriKaslana/MHW-Wiki'
@@ -14,7 +14,7 @@ title: 'MHW Wiki',
     {
       title: 'AlZain IT and Medical Solutions',
       description: 'A professional company profile and service platform for AlZain IT and Medical Solutions, built to showcase their dual-domain expertise. Designed with a clean, trustworthy layout that communicates technical and medical offerings clearly across all devices.',
-      tech: ['HTML, HTML5, CSS, JavaScript'],
+      tech: ['HTML', 'HTML5', 'CSS', 'JavaScript'],
       status: 'Epic',
       image: '/alzain.png',
       link: 'https://github.com/AlZain-IT/alzain'
@@ -30,7 +30,7 @@ title: 'MHW Wiki',
     {
       title: 'Velkstore',
       description: 'A fully functional e-commerce storefront for in-game currency and boosting services, built with a smooth purchasing flow, product listings, and order management. Engineered with Node.js on the back end to handle transactions and dynamic inventory reliably.',
-      tech: ['HTML, CSS, JavaScript, Node.js'],
+      tech: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
       status: 'Epic',
       image: '/velkstore.png',
       link: 'https://github.com/MoriKaslana/VelkStore'
@@ -61,14 +61,14 @@ title: 'MHW Wiki',
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div 
+            <div
               key={project.title}
               className="ancient-border bg-card rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:glow-border"
               style={{animationDelay: `${index * 0.2}s`}}
             >
               <div className="aspect-video bg-gradient-to-br from-muted to-background relative overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover opacity-60 hover:opacity-80 transition-opacity duration-300"
                 />
@@ -83,14 +83,14 @@ title: 'MHW Wiki',
                 <h3 className="font-cinzel text-xl font-bold mb-3 rune-decoration">
                   {project.title}
                 </h3>
-                
+
                 <p className="font-crimson text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech) => (
-                    <span 
+                    <span
                       key={tech}
                       className="font-crimson text-xs px-2 py-1 bg-primary/20 text-primary rounded border border-primary/30"
                     >
