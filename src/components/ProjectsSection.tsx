@@ -22,7 +22,7 @@ title: 'MHW Wiki',
     {
       title: 'The Sovereign Guild',
       description: 'A gamified task management web app that transforms daily productivity into an RPG experience — featuring levels, custom achievements, multiplayer duels, real-time chat, invitation systems, quest tracking, and guild milestones backed by a relational PostgreSQL/MySQL schema.',
-      tech: ['Vue.js', 'PostgreSQL', 'MySQL', 'Node.js'],
+      tech: ['React.js', 'PostgreSQL', 'Firebase', 'Node.js', 'TypeScript'],
       status: 'Mythical',
       image: '/sovereign.png',
       link: 'https://github.com/MoriKaslana/guild-tasks'
